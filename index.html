@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularios</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form action="basededatos.php" method="POST">
+      <label for="idNombre">Nombre: </label>
+      <input
+        type="text"
+        id="idNombre"
+        maxlength="30"
+        size="20"
+        placeholder="Ingresá tu nombre"
+      />
+      <br /><br />
+
+      <label for="idApellido">Apellido: </label>
+      <input
+        type="text"
+        id="idApellido"
+        maxlength="30"
+        size="20"
+        placeholder="Ingresá tu apellido"
+      />
+      <br /><br />
+
+      <label for="idEdad">Edad: </label>
+      <input
+        type="number"
+        id="idEdad"
+        min="0"
+        max="80"
+        maxlength="2"
+        size="20"
+        placeholder="Ingresá tu edad"
+      />
+      <br /><br />
+
+      <label for="idMail">Correo: </label>
+      <input
+        type="email"
+        id="idMail"
+        maxlength="30"
+        size="20"
+        placeholder="Ingresá tu mail"
+      />
+      <br /><br />
+
+      <label for="idPassword">Contraseña: </label>
+      <input
+        type="password"
+        id="idPassword"
+        maxlength="30"
+        size="20"
+        placeholder="Ingresá tu contraseña"
+      />
+      <br /><br />
+
+      <label for="idURL">Página web: </label>
+      <input
+        type="url"
+        id="idURL"
+        maxlength="30"
+        size="20"
+        placeholder="Ingresá tu web"
+      />
+      <br /><br />
+
+      <label for="idFecha">Fecha de nacimiento: </label>
+      <input type="date" id="idFecha" />
+      <br /><br />
+
+      <label for="idPaises">Paises: </label>
+      <select id="idPaises">
+        <option value="AR">Argentina</option>
+        <option value="PE">Perú</option>
+        <option value="MX">México</option>
+      </select>
+      <br /><br />
+
+      <label for="idComentarios">Comentarios: </label><br />
+      <textarea id="idComentarios" cols="50" rows="4" maxlength="1000">
+      </textarea>
+      <br /><br />
+
+      <input id="idLunesC" name="diascheck" type="checkbox" value="lu" />
+      <label for="idLunesC">Lunes </label>
+      <br />
+      <input id="idMartesC" name="diascheck" type="checkbox" value="ma" />
+      <label for="idMartesC">Martes </label>
+      <br />
+      <input
+        id="idMiercolesC"
+        name="diascheck"
+        type="checkbox"
+        value="mi"
+        checked
+      />
+      <label for="idMiercolesC">Miercoles </label>
+      <br />
+      <br />
+
+      <input id="idLunes" name="dias" type="radio" value="1" />
+      <label for="idLunes">Lunes </label>
+      <br />
+      <input id="idMartes" name="dias" type="radio" value="2" />
+      <label for="idMartes">Martes </label>
+      <br />
+      <input id="idMiercoles" name="dias" type="radio" value="3" checked />
+      <label for="idMiercoles">Miercoles </label>
+      <br />
+      <br />
+
+      <input id="idAlcatel" name="celulares" type="radio" value="al" />
+      <label for="idAlcatel">Alcatel </label>
+      <br />
+      <input id="idSamsung" name="celulares" type="radio" value="sa" />
+      <label for="idSamsung">Samsung </label>
+      <br />
+      <input id="idMotorola" name="celulares" type="radio" value="mo" checked />
+      <label for="idMotorola">Motorola </label>
+      <br />
+      <br />
+
+      <div class="container">
+        <button class="login" type="submit">Login</button>
+        <button class="signup" type="submit">SignUp</button>
+        <div class="flex">
+          <div class="alineacion-centrada">
+            <input
+              style="width: 20px; height: 20px"
+              id="idTerminos"
+              type="checkbox"
+              class="margen-negativo"
+              value="leido"
+              checked
+            />
+            <label style="margin-left: 15px" for="idTerminos"
+              >He leído los términos y condiciones
+            </label>
+          </div>
+          <p>Forgot Password</p>
+        </div>
+      </div>
+      <br />
+      <br />
+      <br />
+
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+    </form>
+  </body>
+</html>
